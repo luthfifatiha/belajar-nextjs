@@ -37,9 +37,15 @@ const Home = () => {
             velit velit excepteur quis exercitation incididunt.
           </motion.p>
           {/* button */}
-          <div className="flex justify-center xl:hidden relative">
+          <motion.div
+            variants={fadeIn("up", 0.4)}
+            initial="hidden"
+            animate="show"
+            exit="hidden"
+            className="flex justify-center xl:hidden relative z-10"
+          >
             <ProjectsBtn />
-          </div>
+          </motion.div>
           <motion.div
             variants={fadeIn("down", 0.4)}
             initial="hidden"
@@ -63,7 +69,7 @@ const Home = () => {
           initial="hidden"
           animate="show"
           exit="hidden"
-          transition={{duration: 0, ease: "EaseInOut"}}
+          transition={{ duration: 0, ease: "EaseInOut" }}
           className="w-full h-full max-w-[650px] max-h-[550px] absolute -bottom-32 lg:bottom-0 lg:right-[6%]"
         >
           <Avatar />
