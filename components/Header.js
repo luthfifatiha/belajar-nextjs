@@ -12,9 +12,9 @@ const Header = () => {
     <eader className="absolute z-20 flex items-center pt-3 px-16 xl:px-0 xl:h-[90px] w-full">
       <div className="container mx-auto">
         <div className="flex flex-col lg:flex-row items-center gap-y-4 py-0 justify-between">
-          <p className="font-bold text-3xl text-white lg:text-5xl">
+          <Link href={'/'} className="font-bold text-3xl text-white lg:text-5xl">
             Luthfi <span className="text-accent">Fatiha</span>
-          </p>
+          </Link>
           {/* sosmed */}
           <Socials />
         </div>
