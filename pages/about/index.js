@@ -157,7 +157,7 @@ const About = () => {
                     {/* icons */}
                     {item.icons?.map((icon, itemIndex) => {
                       return (
-                        <div className="text-2xl text-white mb-3">{icon}</div>
+                        <div className="text-2xl hover:text-white transition-all duration-300 mb-3">{icon}</div>
                       );
                     })}
                   </div>
