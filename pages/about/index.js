@@ -8,6 +8,7 @@ import {
   FaReact,
   FaWordpress,
   FaFigma,
+  FaLaravel,
 } from "react-icons/fa";
 
 import {
@@ -15,6 +16,7 @@ import {
   SiFramer,
   SiAdobexd,
   SiAdobephotoshop,
+  SiFlutter,
 } from "react-icons/si";
 
 //  data
@@ -30,8 +32,8 @@ const aboutData = [
           <FaJs />,
           <FaReact />,
           <SiNextdotjs />,
-          <SiFramer />,
-          <FaWordpress />,
+          <SiFlutter />,
+          <FaLaravel />,
         ],
       },
       {
@@ -100,7 +102,9 @@ const About = () => {
   console.log(index);
   return (
     <div className="h-full bg-primary/30 py-32 text-center xl:text-left">
-      <Circles />
+      <div className="z-0">
+        <Circles />
+      </div>
 
       {/* Avatar */}
       <motion.div
@@ -114,15 +118,29 @@ const About = () => {
       </motion.div>
 
       <div className="container mx-auto h-full flex flex-col items-center xl:flex-row gap-x-6">
-        <div className="flex-1 flex flex-col justify-center mb-8">
+        <motion.div
+          variants={fadeIn("right", 0.2)}
+          initial="hidden"
+          animate="show"
+          exit="hidden"
+          className="flex-1 flex flex-col justify-center mb-8"
+        >
           <h2 className="h2 mb-2">Natus Vincere</h2>
           <p class="font-normal text-base max-w-xl lg:text-lg">
-            Hello, My Name's Muhammad Luthfi Fatiha, you can call me Upi or Ufi. My hobby is Coding and playing Badminton. I have a dream to be a programmer, hope i can make it happen.
+            Hello, My Name's Muhammad Luthfi Fatiha, you can call me Upi or Ufi.
+            My hobby is Coding and playing Badminton. I have a dream to be a
+            programmer, hope i can make it happen.
           </p>
-        </div>
+        </motion.div>
 
         {/* about */}
-        <div className="flex flex-col w-full xl:max-w-[48%] h-[200px]">
+        <motion.div
+          variants={fadeIn("left", 0.2)}
+          initial="hidden"
+          animate="show"
+          exit="hidden"
+          className="flex flex-col w-full xl:max-w-[48%] h-[200px]"
+        >
           {/* title */}
           <div className="flex gap-x-4 xl:gap-x-8 mx-auto xl:mx-0 mb-4">
             {aboutData.map((item, itemIndex) => {
@@ -157,7 +175,9 @@ const About = () => {
                     {/* icons */}
                     {item.icons?.map((icon, itemIndex) => {
                       return (
-                        <div className="text-2xl hover:text-white transition-all duration-300 mb-3">{icon}</div>
+                        <div className="text-2xl hover:text-white transition-all duration-300 mb-3">
+                          {icon}
+                        </div>
                       );
                     })}
                   </div>
@@ -165,7 +185,7 @@ const About = () => {
               );
             })}
           </div>
-        </div>
+        </motion.div>
       </div>
     </div>
   );
