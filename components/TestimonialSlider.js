@@ -71,10 +71,10 @@ const TestimonialSlider = () => {
               <div className="flex-1 flex flex-col justify-center before:w-[1px] xl:before:bg-white/20 xl:before:absolute xl:before:left-0 xl:before:h-[200px] relative xl:pl-20 mb-10">
                 {/* quote icons */}
                 <div className="mb-4">
-                  <FaQuoteLeft className="text-3xl xl:text-5xl text-white/20 mx-auto md:mx-0" />
+                  <FaQuoteLeft className="text-2xl xl:text-5xl text-white/20 mx-auto md:mx-0" />
                 </div>
                 {/* message */}
-                <div className="xl:text-lg text-center md:text-left">
+                <div className="xl:text-lg text-base text-center md:text-left">
                   {person.message}
                 </div>
               </div>
