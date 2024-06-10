@@ -131,7 +131,7 @@ const About = () => {
         >
           <h2 className="h2 mb-2">Natus Vincere</h2>
           <p class="font-normal text-base max-w-xl lg:text-lg">
-            Hello, My Name's Muhammad Luthfi Fatiha, you can call me Upi or Ufi.
+            Hello, My name is Muhammad Luthfi Fatiha, you can call me Upi or Ufi.
             My hobby is Coding and playing Badminton. I have a dream to be a
             programmer, hope i can make it happen.
           </p>
