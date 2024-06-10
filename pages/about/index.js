@@ -27,18 +27,22 @@ const aboutData = [
       {
         title: "Web Development",
         icons: [
-          <FaHtml5 />,
-          <FaCss3 />,
-          <FaJs />,
-          <FaReact />,
-          <SiNextdotjs />,
-          <SiFlutter />,
-          <FaLaravel />,
+          <FaHtml5 key="FaHtml5" />,
+          <FaCss3 key="FaCss3" />,
+          <FaJs key="FaJs" />,
+          <FaReact key="FaReact" />,
+          <SiNextdotjs key="SiNextdotjs" />,
+          <SiFlutter key="SiFlutter" />,
+          <FaLaravel key="FaLaravel" />,
         ],
       },
       {
         title: "UI/UX Design",
-        icons: [<FaFigma />, <SiAdobexd />, <SiAdobephotoshop />],
+        icons: [
+          <FaFigma key="FaFigma" />,
+          <SiAdobexd key="SiAdobexd" />,
+          <SiAdobephotoshop key="SiAdobephotoshop" />,
+        ],
       },
     ],
   },
@@ -123,7 +127,7 @@ const About = () => {
           initial="hidden"
           animate="show"
           exit="hidden"
-          className="flex-1 flex flex-col justify-center mb-8"
+          className="flex-1 flex flex-col justify-center mb-10 mt-7"
         >
           <h2 className="h2 mb-2">Natus Vincere</h2>
           <p class="font-normal text-base max-w-xl lg:text-lg">
@@ -139,7 +143,7 @@ const About = () => {
           initial="hidden"
           animate="show"
           exit="hidden"
-          className="flex flex-col w-full xl:max-w-[48%] h-[200px]"
+          className="flex flex-col w-full xl:max-w-[48%] h-[200px] mb-10"
         >
           {/* title */}
           <div className="flex gap-x-4 xl:gap-x-8 mx-auto xl:mx-0 mb-4">
@@ -158,7 +162,6 @@ const About = () => {
               );
             })}
           </div>
-
           {/* point */}
           <div className="py-2 xl:py-6 flex flex-col gap-y-2 xl:gap-y-4 items-center xl:items-start">
             {aboutData[index].info.map((item, itemIndex) => {
@@ -175,7 +178,10 @@ const About = () => {
                     {/* icons */}
                     {item.icons?.map((icon, itemIndex) => {
                       return (
-                        <div className="text-2xl hover:text-white transition-all duration-300 mb-3">
+                        <div
+                          key={itemIndex}
+                          className="text-2xl hover:text-white transition-all duration-300 mb-3"
+                        >
                           {icon}
                         </div>
                       );
