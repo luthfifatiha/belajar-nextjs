@@ -127,7 +127,7 @@ const About = () => {
           initial="hidden"
           animate="show"
           exit="hidden"
-          className="flex-1 flex flex-col justify-center mb-10 mt-7"
+          className="flex-1 flex flex-col justify-center mb-10 mt-7 xl:mt-0"
         >
           <h2 className="h2 mb-2">Natus Vincere</h2>
           <p class="font-normal text-base max-w-xl lg:text-lg">
@@ -143,7 +143,7 @@ const About = () => {
           initial="hidden"
           animate="show"
           exit="hidden"
-          className="flex flex-col w-full xl:max-w-[48%] h-[200px] mb-10"
+          className="flex flex-col w-full xl:max-w-[48%] h-[200px] mb-10 xl:mb-0"
         >
           {/* title */}
           <div className="flex gap-x-4 xl:gap-x-8 mx-auto xl:mx-0 mb-4">
