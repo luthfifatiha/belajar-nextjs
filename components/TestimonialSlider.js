@@ -59,7 +59,7 @@ const TestimonialSlider = () => {
                 <div className="flex flex-col justify-center text-center">
                   {/* avatar */}
                   <div className="mb-2 mx-auto">
-                    <Image src={person.image} width={90} height={90} />
+                    <Image src={person.image} width={90} height={90} alt="" />
                   </div>
                   {/* name */}
                   <div className="text-lg">{person.name}</div>
