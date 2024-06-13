@@ -15,46 +15,22 @@ const Home = () => {
       <div className="w-full h-full bg-gradient-to-r from-primary/10 via-black/30 to-black/10 pt-5">
         <div className="text-center flex flex-col justify-center xl:pt-40 xl:text-left h-full container mx-auto">
           {/* title */}
-          <motion.h1
-            variants={fadeIn("down", 0.2)}
-            initial="hidden"
-            animate="show"
-            exit="hidden"
-            className="h2"
-          >
+          <h2 className="h2">
             Transforming Ideas <br /> Into{" "}
             <span className="text-accent">Digital Reality</span>
-          </motion.h1>
+          </h2>
           {/* subtitle */}
-          <motion.p
-            variants={fadeIn("down", 0.3)}
-            initial="hidden"
-            animate="show"
-            exit="hidden"
-            className="max-w-sm xl:max-w-xl text-base mx-auto xl:mx-0 mb-10 xl:mb-10"
-          >
+          <p className="max-w-sm xl:max-w-xl text-base mx-auto xl:mx-0 mb-10 xl:mb-10">
             Exercitation sit commodo reprehenderit in laborum laborum officia
             velit velit excepteur quis exercitation incididunt.
-          </motion.p>
+          </p>
           {/* button */}
-          <motion.div
-            variants={fadeIn("up", 0.4)}
-            initial="hidden"
-            animate="show"
-            exit="hidden"
-            className="flex justify-center xl:hidden relative z-10"
-          >
+          <div className="flex justify-center xl:hidden relative z-10">
             <ProjectsBtn />
-          </motion.div>
-          <motion.div
-            variants={fadeIn("down", 0.4)}
-            initial="hidden"
-            animate="show"
-            exit="hidden"
-            className="hidden xl:flex"
-          >
+          </div>
+          <div className="hidden xl:flex">
             <ProjectsBtn />
-          </motion.div>
+          </div>
         </div>
       </div>
       {/* Image */}
@@ -64,16 +40,9 @@ const Home = () => {
         {/* particles */}
         <ParticlesContainer />
         {/* avatar img */}
-        <motion.div
-          variants={fadeIn("up", 0.4)}
-          initial="hidden"
-          animate="show"
-          exit="hidden"
-          transition={{ duration: 0, ease: "EaseInOut" }}
-          className="w-full h-full max-w-[650px] max-h-[550px] absolute -bottom-32 lg:bottom-0 lg:right-[6%]"
-        >
+        <div className="w-full h-full max-w-[650px] max-h-[550px] absolute -bottom-32 lg:bottom-0 lg:right-[6%]">
           <Avatar />
-        </motion.div>
+        </div>
       </div>
     </div>
   );

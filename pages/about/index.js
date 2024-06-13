@@ -111,38 +111,26 @@ const About = () => {
       </div>
 
       {/* Avatar */}
-      <motion.div
-        variants={fadeIn("right", 0.2)}
-        initial="hidden"
-        animate="show"
-        exit="hidden"
+      <div
         className="hidden xl:flex absolute bottom-0 -left-[370px]"
       >
         <Avatar />
-      </motion.div>
+      </div>
 
       <div className="container mx-auto h-full flex flex-col items-center xl:flex-row gap-x-6">
-        <motion.div
-          variants={fadeIn("right", 0.2)}
-          initial="hidden"
-          animate="show"
-          exit="hidden"
+        <div
           className="flex-1 flex flex-col justify-center mb-10 mt-7 xl:mt-0"
         >
           <h2 className="h2 mb-2">Natus Vincere</h2>
           <p class="font-normal text-base max-w-xl lg:text-lg">
-            Hello, My name is Muhammad Luthfi Fatiha, you can call me Upi or Ufi.
-            My hobby is Coding and playing Badminton. I have a dream to be a
-            programmer, hope i can make it happen.
+            Hello, My name is Muhammad Luthfi Fatiha, you can call me Upi or
+            Ufi. My hobby is Coding and playing Badminton. I have a dream to be
+            a programmer, hope i can make it happen.
           </p>
-        </motion.div>
+        </div>
 
         {/* about */}
-        <motion.div
-          variants={fadeIn("left", 0.2)}
-          initial="hidden"
-          animate="show"
-          exit="hidden"
+        <div
           className="flex flex-col w-full xl:max-w-[48%] h-[200px] mb-10 xl:mb-0"
         >
           {/* title */}
@@ -191,7 +179,7 @@ const About = () => {
               );
             })}
           </div>
-        </motion.div>
+        </div>
       </div>
     </div>
   );
