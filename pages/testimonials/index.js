@@ -1,8 +1,5 @@
 import TestimonialSlider from "../../components/TestimonialSlider";
 
-import { motion } from "framer-motion";
-import { fadeIn } from "../../variants";
-
 const Testimonials = () => {
   return (
     <div className="h-full bg-primary/30 py-32 text-center">
